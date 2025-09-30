@@ -1,11 +1,11 @@
-// app/law-office/page.tsx (or wherever you want to place this component)
-
-// app/page.tsx
 'use client'
 
 import React, { useState } from 'react'
+import { Scale, Gavel, Building, MapPin, ChevronLeft, ChevronRight } from 'lucide-react'
+import BannerContent from './contents/banner-content'
+import PracticalAreaContent from './contents/practical-area-content'
+import SYSLogo from "@/app/assets/sys-logo.png"
 import Image from 'next/image'
-import { Scale, Gavel, Building, MapPin, Phone, Mail, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function Home() {
   const [currentPartner, setCurrentPartner] = useState(0)
@@ -47,38 +47,35 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-slate-900 text-white py-4">
-        <div className="container mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="bg-amber-600 px-2 py-1 text-sm font-bold">SYS</div>
-            <span className="text-sm">LAW OFFICE</span>
-          </div>
+      <nav className="bg-[#172336] text-white py-4 h-20 flex items-center">
+        <div className="px-6 flex justify-end items-center w-full">
+          <Image src={SYSLogo} alt={''} width={200} height={20} className="fixed top-0 left-20" />
           <div className="hidden md:flex space-x-6">
             <a 
               href="#home" 
               onClick={(e) => handleSmoothScroll(e, 'home')}
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#C7A46C] transition-colors"
             >
               Home
             </a>
             <a 
               href="#about" 
               onClick={(e) => handleSmoothScroll(e, 'about')}
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#C7A46C] transition-colors"
             >
               About
             </a>
             <a 
               href="#services" 
               onClick={(e) => handleSmoothScroll(e, 'services')}
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#C7A46C] transition-colors"
             >
               Services
             </a>
             <a 
               href="#contact" 
               onClick={(e) => handleSmoothScroll(e, 'contact')}
-              className="hover:text-amber-400 transition-colors"
+              className="hover:text-[#C7A46C] transition-colors"
             >
               Contact
             </a>
@@ -87,77 +84,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen flex items-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-20">
-          <Scale size={400} className="text-amber-600" />
-        </div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              SARTONO YUDHIO SUMARTO
-              <span className="block text-3xl md:text-4xl mt-2">LAW OFFICE</span>
-            </h1>
-            <p className="text-xl mb-8 text-gray-300 italic">
-              &quot;Established to deliver precise legal counsel on litigation, advisory, and 
-              contractual matters across diverse fields of law.&quot;
-            </p>
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg transition-colors font-semibold">
-              CONTACT US
-            </button>
-          </div>
-        </div>
-      </section>
-
+      <BannerContent />
+      
       {/* Practice Areas */}
-      <section id="services" className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">OUR PRACTICE AREAS</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Dispute Resolution */}
-            <div className="text-center bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex justify-center mb-6">
-                <Gavel className="w-16 h-16 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Dispute Resolution</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                We resolve civil and commercial disputes to suit our client&apos;s commercial objectives through arbitration and strategic litigation.
-              </p>
-              <button className="text-amber-600 hover:text-amber-700 font-semibold border-b border-amber-600 hover:border-amber-700 transition-colors">
-                See detail →
-              </button>
-            </div>
-
-            {/* Business & Consultation */}
-            <div className="text-center bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex justify-center mb-6">
-                <Scale className="w-16 h-16 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Business & Consultation</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                We draft, review, and negotiate appropriate documentation and provide legal guidance on compliance, intellectual property, and corporate IT law.
-              </p>
-              <button className="text-amber-600 hover:text-amber-700 font-semibold border-b border-amber-600 hover:border-amber-700 transition-colors">
-                See detail →
-              </button>
-            </div>
-
-            {/* Legal Service */}
-            <div className="text-center bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex justify-center mb-6">
-                <Building className="w-16 h-16 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">Legal Service</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                We assist with business establishments and compliance with expertise in corporate, aviation, labor, family, criminal, and immigration law.
-              </p>
-              <button className="text-amber-600 hover:text-amber-700 font-semibold border-b border-amber-600 hover:border-amber-700 transition-colors">
-                See detail →
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PracticalAreaContent />
 
       {/* About Us */}
       <section id="about" className="py-16 bg-white">
