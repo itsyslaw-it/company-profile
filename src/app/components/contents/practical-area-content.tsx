@@ -7,17 +7,17 @@ export default function PracticalAreaContent() {
   const practicalContentArr = [
     {
       title: "Dispute Resolution",
-      text: <p>We resolve civil and commercial disputes to suit our client&apos;s commercial objectives through arbitration and strategic litigation.</p>,
+      text: <p className="text-gray-800">We resolve civil and commercial disputes to suit our client&apos;s commercial objectives through arbitration and strategic litigation.</p>,
       image: Gavel
     },
     {
       title: "Business & Consultation",
-      text: <p>We draft, review, and negotiate appropriate documentation and provide legal guidance on compliance, intellectual property, and corporate IT law.</p>,
+      text: <p className="text-gray-800">We draft, review, and negotiate appropriate documentation and provide legal guidance on compliance, intellectual property, and corporate IT law.</p>,
       image: Scale
     },
     {
       title: "Legal Service",
-      text: <p>We assist with business establishments and compliance with expertise in corporate, aviation, labor, family, criminal, and immigration law.</p>,
+      text: <p className="text-gray-800">We assist with business establishments and compliance with expertise in corporate, aviation, labor, family, criminal, and immigration law.</p>,
       image: CourtHouse
     },
 
@@ -29,7 +29,7 @@ export default function PracticalAreaContent() {
         <div className="grid md:grid-cols-3 gap-8">
           {practicalContentArr.map((e, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow min-h-[608px] flex flex-col justify-between">
-              <div className="blok">
+              <div className="block">
                 <div className="flex justify-center mb-6 min-h-[200px]">
                   <Image src={e.image} alt={""} className="object-contain" />
                 </div>
