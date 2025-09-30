@@ -1,11 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Scale, Gavel, Building, MapPin, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Scale, MapPin, ChevronLeft, ChevronRight } from 'lucide-react'
 import BannerContent from './contents/banner-content'
 import PracticalAreaContent from './contents/practical-area-content'
-import SYSLogo from "@/app/assets/sys-logo.png"
-import Image from 'next/image'
+import NavbarContent from './contents/navbar-content'
 
 export default function Home() {
   const [currentPartner, setCurrentPartner] = useState(0)
@@ -25,17 +24,6 @@ export default function Home() {
     }
   ]
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault()
-    const element = document.getElementById(targetId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    }
-  }
-
   const nextPartner = () => {
     setCurrentPartner((prev) => (prev + 1) % partners.length)
   }
@@ -47,41 +35,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-[#172336] text-white py-4 h-20 flex items-center">
-        <div className="px-6 flex justify-end items-center w-full">
-          <Image src={SYSLogo} alt={''} width={200} height={20} className="fixed top-0 left-20" />
-          <div className="hidden md:flex space-x-6">
-            <a 
-              href="#home" 
-              onClick={(e) => handleSmoothScroll(e, 'home')}
-              className="hover:text-[#C7A46C] transition-colors"
-            >
-              Home
-            </a>
-            <a 
-              href="#about" 
-              onClick={(e) => handleSmoothScroll(e, 'about')}
-              className="hover:text-[#C7A46C] transition-colors"
-            >
-              About
-            </a>
-            <a 
-              href="#services" 
-              onClick={(e) => handleSmoothScroll(e, 'services')}
-              className="hover:text-[#C7A46C] transition-colors"
-            >
-              Services
-            </a>
-            <a 
-              href="#contact" 
-              onClick={(e) => handleSmoothScroll(e, 'contact')}
-              className="hover:text-[#C7A46C] transition-colors"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
+      <NavbarContent />
 
       {/* Hero Section */}
       <BannerContent />
@@ -241,6 +195,3 @@ export default function Home() {
     </div>
   )
 }
-
-// Just install lucide-react if you don't have it:
-// npm install lucide-react
