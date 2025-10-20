@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Scale, MapPin, ChevronLeft, ChevronRight } from 'lucide-react'
+import React from 'react'
+import { MapPin } from 'lucide-react'
 import BannerContent from './contents/banner-content'
 import PracticalAreaContent from './contents/practical-area-content'
 import NavbarContent from './contents/navbar-content'
