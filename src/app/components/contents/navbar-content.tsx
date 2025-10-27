@@ -2,7 +2,6 @@
 
 import SYSLogo from "@/app/assets/sys-logo.png";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 interface Props {
