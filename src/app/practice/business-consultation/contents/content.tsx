@@ -9,13 +9,15 @@ export default function DisputeResolutionPage() {
   const router = useRouter();
   return (
     <div className="relative flex flex-col min-h-screen items-center w-full">
-      <Image
-        className="absolute top-0 left-0 w-full h-[750px] object-cover"
-        width={1920}
-        height={887}
-        src={BusinessConsultation}
-        alt=""
-      />
+      <div className="absolute top-0 left-0 w-full h-full min-h-screen -z-10">
+        <Image
+          className="w-full h-full object-cover"
+          width={1920}
+          height={100}
+          src={BusinessConsultation}
+          alt=""
+        />
+      </div>
       <NavbarContent className="z-30 w-full" />
       <h1 className="text-white z-40 text-[40px] font-bold mt-9 mb">
         Business & Consultation
@@ -33,7 +35,7 @@ export default function DisputeResolutionPage() {
         </span>
       </div>
 
-      <div className="w-full flex items-center justify-center my-9 gap-5">
+      <div className="w-full flex items-center justify-center mt-9 gap-5 bg-white py-16">
         <button className="rounded w-fit border-2 border-gray-500 p-2 cursor-pointer" onClick={(() => router.push("/practice/dispute-resolution"))}>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
             <path d="M14.6875 23.1251L1.25 12.1876L14.6875 1.25006" stroke="#131D2D" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -46,7 +48,7 @@ export default function DisputeResolutionPage() {
         </button>
       </div>
 
-      <footer className="bg-slate-900 text-white py-8 z-30 w-full mt-auto">
+      <footer className="bg-slate-900 text-white py-8 z-30 w-full">
         <div className="container mx-auto px-6">
           <div className="text-sm text-gray-400">
             <p>
