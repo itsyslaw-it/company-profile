@@ -9,18 +9,20 @@ export default function DisputeResolutionPage() {
   const router = useRouter();
   return (
     <div className="relative flex flex-col min-h-screen items-center w-full">
-      <Image
-        className="absolute top-0 left-0 w-full h-[750px] object-cover"
-        width={1920}
-        height={887}
-        src={DisputeResolutionImage}
-        alt=""
-      />
+      <div className="absolute top-0 left-0 w-full h-full min-h-screen -z-10">
+        <Image
+          className="w-full h-full object-cover"
+          width={1920}
+          height={100}
+          src={DisputeResolutionImage}
+          alt=""
+        />
+      </div>
       <NavbarContent className="z-30 w-full" />
       <h1 className="text-[#131D2D] z-40 text-[40px] font-bold mt-9 mb">
         Dispute Resolution
       </h1>
-      
+
       <div className="flex flex-col p-10 bg-white/80 z-40 w-3/4 mt-9 text-[#131D2D] gap-10">
         <span className="text-lg">
           The dispute resolution practice of SYS Law Office covers a wide range
@@ -50,7 +52,7 @@ export default function DisputeResolutionPage() {
         </span>
       </div>
 
-      <div className="w-full flex items-center justify-center my-9">
+      <div className="w-full flex items-center justify-center mt-9 bg-white py-16">
         <button className="rounded w-fit border-2 border-gray-500 p-2 cursor-pointer" onClick={(() => router.push("/practice/business-consultation"))}>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
             <path d="M1.25 1.25006L14.6875 12.1876L1.25 23.1251" stroke="#131D2D" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -58,7 +60,7 @@ export default function DisputeResolutionPage() {
         </button>
       </div>
 
-      <footer className="bg-slate-900 text-white py-8 z-30 w-full mt-auto">
+      <footer className="bg-slate-900 text-white py-8 z-30 w-full">
         <div className="container mx-auto px-6">
           <div className="text-sm text-gray-400">
             <p>
