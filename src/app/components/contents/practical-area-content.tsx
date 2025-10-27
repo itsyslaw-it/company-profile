@@ -36,9 +36,9 @@ export default function PracticalAreaContent() {
                 <h3 className="text-3xl font-bold mb-5 text-gray-800 text-center">{e.title}</h3>
                 {e.text}
               </div>
-              <button className="text-right cursor-pointer w-full text-[#C7A46C] hover:text-[#B08F58] font-semibold text-xl">
+              {/* <button className="text-right cursor-pointer w-full text-[#C7A46C] hover:text-[#B08F58] font-semibold text-xl">
                 See detail →
-              </button>
+              </button> */}
             </div>
 
           ))}
