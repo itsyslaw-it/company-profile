@@ -23,7 +23,7 @@ export default function DisputeResolutionPage() {
         Business & Consultation
       </h1>
       
-      <div className="flex flex-col p-10 bg-white/80 z-40 w-3/4 mt-9 text-[#131D2D] gap-10">
+      <div className="flex flex-col p-10 bg-white/80 z-40 w-1/2 mt-9 text-[#131D2D] gap-10">
         <span className="text-lg">
           SYS Law Office offers structured legal support to businesses throughout their operational lifecycle. The firm assists in the drafting, reviewing, and negotiating of contracts and agreements, including joint ventures, loan agreements, franchise and licensing arrangements, as well as mergers and acquisitions. Each document is prepared with careful attention to compliance, enforceability, and the alignment of obligations between parties.
         </span>
@@ -35,7 +35,7 @@ export default function DisputeResolutionPage() {
         </span>
       </div>
 
-      <div className="w-full flex items-center justify-center mt-9 gap-5 bg-white py-16">
+      <div className="w-full flex items-center justify-center mt-9 gap-5 bg-white py-5">
         <button className="rounded w-fit border-2 border-gray-500 p-2 cursor-pointer" onClick={(() => router.push("/practice/dispute-resolution"))}>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
             <path d="M14.6875 23.1251L1.25 12.1876L14.6875 1.25006" stroke="#131D2D" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

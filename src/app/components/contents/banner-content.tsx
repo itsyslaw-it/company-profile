@@ -3,10 +3,11 @@ import HomePageCover from "@/app/assets/homepage-cover.png"
 
 export default function BannerContent() {
   return (
-    <section className="relative text-white min-h-screen flex items-center overflow-hidden bg-[#131D2D]">
-      {/* Image Container */}
-      <div className="absolute h-full md:right-0 w-full md:w-3/4">
+    <section className="relative text-white min-h-[600px] flex items-center overflow-hidden bg-[#131D2D]">
+      <div className="absolute h-full md:right-0 flex">
         <Image
+          width={750}
+          height={500}
           src={HomePageCover}
           alt="Law Office Banner"
           className="object-cover h-full"
@@ -14,10 +15,9 @@ export default function BannerContent() {
         />
       </div>
 
-      {/* kalo small / mobile ilangin kalo md baru munculin */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#131D2D] from-25% via-[#131D2D]/80" />
+      {/* <div className="absolute inset-0 bg-gradient-to-r from-[#131D2D] from-15% via-[#131D2D]/80" /> */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#131D2D] from-40% via-[#131D2D]/90 via-70% to-transparent" />
 
-      {/* Content */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl mb-6 font-serif">
