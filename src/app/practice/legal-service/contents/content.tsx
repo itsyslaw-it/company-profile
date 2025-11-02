@@ -5,7 +5,7 @@ import DisputeResolutionImage from "@/app/assets/legal-service.png";
 import NavbarContent from "@/app/components/contents/navbar-content";
 import { useRouter } from "next/navigation";
 
-export default function DisputeResolutionPage() {
+export default function LegalServiceContent() {
   const router = useRouter();
   return (
     <div className="relative flex flex-col min-h-screen items-center w-full">
