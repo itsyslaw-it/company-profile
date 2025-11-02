@@ -39,6 +39,7 @@ export default function NavbarContent({ className }: Props) {
           width={200}
           height={20}
           className="fixed top-0 left-20 transition-opacity duration-300"
+          onClick={(() => router.push("/"))}
         />
         <div className="hidden md:flex space-x-6">
           {["home", "about", "services", "contact"].map((section) => (

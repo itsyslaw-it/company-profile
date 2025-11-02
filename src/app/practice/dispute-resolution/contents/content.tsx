@@ -19,12 +19,12 @@ export default function DisputeResolutionPage() {
         />
       </div>
       <NavbarContent className="z-30 w-full" />
-      <div className="flex flex-col w-full items-center">
+      <div className="px-5 md:px-0 flex flex-col w-full items-center">
         <h1 className="text-[#131D2D] z-40 text-[40px] font-bold mt-9 mb">
           Dispute Resolution
         </h1>
 
-        <div className="flex flex-col p-10 bg-white/80 z- 40 w-1/2 mt-9 text-[#131D2D] gap-10">
+        <div className="flex flex-col p-10 bg-white/80 z- 40 md:w-1/2 mt-9 text-[#131D2D] gap-10">
           <span className="text-lg">
             The dispute resolution practice of SYS Law Office covers a wide range
             of civil and criminal matters. The firm represents clients in
