@@ -5,7 +5,7 @@ import BusinessConsultation from "@/app/assets/business-consultation.png";
 import NavbarContent from "@/app/components/contents/navbar-content";
 import { useRouter } from "next/navigation";
 
-export default function DisputeResolutionPage() {
+export default function BusinessConsultationContent() {
   const router = useRouter();
   return (
     <div className="relative flex flex-col min-h-screen items-center w-full">
@@ -19,22 +19,22 @@ export default function DisputeResolutionPage() {
         />
       </div>
       <NavbarContent className="z-30 w-full" />
-      <h1 className="text-white z-40 text-[40px] font-bold mt-9 mb">
-        Business & Consultation
-      </h1>
-      
-      <div className="flex flex-col p-10 bg-white/80 z-40 w-1/2 mt-9 text-[#131D2D] gap-10">
-        <span className="text-lg">
-          SYS Law Office offers structured legal support to businesses throughout their operational lifecycle. The firm assists in the drafting, reviewing, and negotiating of contracts and agreements, including joint ventures, loan agreements, franchise and licensing arrangements, as well as mergers and acquisitions. Each document is prepared with careful attention to compliance, enforceability, and the alignment of obligations between parties.
-        </span>
-        <span className="text-lg">
-          In addition to transactional support, the firm provides advisory services on regulatory compliance and day-to-day operational issues, ensuring that businesses adhere to prevailing legal requirements while maintaining efficiency in their activities. This encompasses guidance on corporate governance, statutory obligations, and the management of risks associated with regulatory oversight.
-        </span>
-        <span className="text-lg">
-          The firm also possesses recognized expertise in specialized legal domains, including intellectual property, aviation law, and information technology law. This capability allows SYS Law Office to support industries that require precise legal insight into technical and rapidly evolving sectors. By addressing issues such as intellectual property protection, regulatory matters in aviation operations, and compliance in IT systems and digital platforms, the firm provides comprehensive legal oversight across diverse fields of practice.
-        </span>
+      <div className="flex flex-col w-full px-5 md:px-0">
+        <h1 className="text-white z-40 text-[40px] font-bold mt-9 mb">
+          Business & Consultation
+        </h1>
+        <div className="flex flex-col p-10 bg-white/80 z-40 md:w-1/2 mt-9 text-[#131D2D] gap-10">
+          <span className="text-lg">
+            SYS Law Office offers structured legal support to businesses throughout their operational lifecycle. The firm assists in the drafting, reviewing, and negotiating of contracts and agreements, including joint ventures, loan agreements, franchise and licensing arrangements, as well as mergers and acquisitions. Each document is prepared with careful attention to compliance, enforceability, and the alignment of obligations between parties.
+          </span>
+          <span className="text-lg">
+            In addition to transactional support, the firm provides advisory services on regulatory compliance and day-to-day operational issues, ensuring that businesses adhere to prevailing legal requirements while maintaining efficiency in their activities. This encompasses guidance on corporate governance, statutory obligations, and the management of risks associated with regulatory oversight.
+          </span>
+          <span className="text-lg">
+            The firm also possesses recognized expertise in specialized legal domains, including intellectual property, aviation law, and information technology law. This capability allows SYS Law Office to support industries that require precise legal insight into technical and rapidly evolving sectors. By addressing issues such as intellectual property protection, regulatory matters in aviation operations, and compliance in IT systems and digital platforms, the firm provides comprehensive legal oversight across diverse fields of practice.
+          </span>
+        </div>
       </div>
-
       <div className="w-full flex items-center justify-center mt-9 gap-5 bg-white py-5">
         <button className="rounded w-fit border-2 border-gray-500 p-2 cursor-pointer" onClick={(() => router.push("/practice/dispute-resolution"))}>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">

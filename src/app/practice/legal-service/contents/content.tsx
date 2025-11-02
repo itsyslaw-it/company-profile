@@ -5,7 +5,7 @@ import DisputeResolutionImage from "@/app/assets/legal-service.png";
 import NavbarContent from "@/app/components/contents/navbar-content";
 import { useRouter } from "next/navigation";
 
-export default function DisputeResolutionPage() {
+export default function LegalServiceContent() {
   const router = useRouter();
   return (
     <div className="relative flex flex-col min-h-screen items-center w-full">
@@ -19,20 +19,22 @@ export default function DisputeResolutionPage() {
         />
       </div>
       <NavbarContent className="z-30 w-full" />
-      <h1 className="text-[#131D2D] z-40 text-[40px] font-bold mt-9 mb">
-        Legal Service
-      </h1>
+      <div className="flex flex-col w-full px-5 md:px-0">
+        <h1 className="text-[#131D2D] z-40 text-[40px] font-bold mt-9 mb">
+          Legal Service
+        </h1>
 
-      <div className="flex flex-col p-10 bg-white/80 z-40 w-1/2 mt-9 text-[#131D2D] gap-10">
-        <span className="text-lg">
-          SYS Law Office provides a comprehensive range of legal services tailored to both corporate entities and individuals. In business establishment and restructuring, the firm assists clients in selecting suitable legal structures, ensuring compliance, and implementing frameworks that support long-term growth. In the area of mergers and acquisitions, the firm conducts due diligence, prepares and reviews transactional documents, and advises throughout negotiations to secure strategic objectives while minimizing risks.
-        </span>
-        <span className="text-lg">
-          The firm also offers counsel on corporate governance and regulatory compliance, particularly in regulated sectors such as aviation, where licensing, operational approvals, and contractual matters require both precision and technical understanding. Beyond corporate matters, SYS Law Office handles labor disputes, family law, and insolvency, providing practical solutions that balance legal rigor with the protection of client interests.
-        </span>
-        <span className="text-lg">
-          In addition, the firm has strong expertise in litigation, arbitration, and alternative dispute resolution (ADR). Whether through court proceedings or arbitration forums, SYS Law Office approaches each case with strategic foresight aimed at achieving outcomes that are legally sound and practically effective. For both domestic and international investors, the firm also provides investment consultation, offering guidance on structuring, regulatory approvals, and compliance for sustainable ventures.
-        </span>
+        <div className="flex flex-col p-10 bg-white/80 z-40 md:w-1/2 mt-9 text-[#131D2D] gap-10">
+          <span className="text-lg">
+            SYS Law Office provides a comprehensive range of legal services tailored to both corporate entities and individuals. In business establishment and restructuring, the firm assists clients in selecting suitable legal structures, ensuring compliance, and implementing frameworks that support long-term growth. In the area of mergers and acquisitions, the firm conducts due diligence, prepares and reviews transactional documents, and advises throughout negotiations to secure strategic objectives while minimizing risks.
+          </span>
+          <span className="text-lg">
+            The firm also offers counsel on corporate governance and regulatory compliance, particularly in regulated sectors such as aviation, where licensing, operational approvals, and contractual matters require both precision and technical understanding. Beyond corporate matters, SYS Law Office handles labor disputes, family law, and insolvency, providing practical solutions that balance legal rigor with the protection of client interests.
+          </span>
+          <span className="text-lg">
+            In addition, the firm has strong expertise in litigation, arbitration, and alternative dispute resolution (ADR). Whether through court proceedings or arbitration forums, SYS Law Office approaches each case with strategic foresight aimed at achieving outcomes that are legally sound and practically effective. For both domestic and international investors, the firm also provides investment consultation, offering guidance on structuring, regulatory approvals, and compliance for sustainable ventures.
+          </span>
+        </div>
       </div>
 
       <div className="w-full flex items-center justify-center mt-9 bg-white py-5">
