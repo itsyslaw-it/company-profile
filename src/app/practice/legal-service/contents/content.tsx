@@ -13,7 +13,7 @@ export default function DisputeResolutionPage() {
         <Image
           className="w-full h-full object-cover"
           width={1920}
-          height={100}
+          height={1000}
           src={DisputeResolutionImage}
           alt=""
         />
@@ -23,7 +23,7 @@ export default function DisputeResolutionPage() {
         Legal Service
       </h1>
 
-      <div className="flex flex-col p-10 bg-white/80 z-40 w-3/4 mt-9 text-[#131D2D] gap-10">
+      <div className="flex flex-col p-10 bg-white/80 z-40 w-1/2 mt-9 text-[#131D2D] gap-10">
         <span className="text-lg">
           SYS Law Office provides a comprehensive range of legal services tailored to both corporate entities and individuals. In business establishment and restructuring, the firm assists clients in selecting suitable legal structures, ensuring compliance, and implementing frameworks that support long-term growth. In the area of mergers and acquisitions, the firm conducts due diligence, prepares and reviews transactional documents, and advises throughout negotiations to secure strategic objectives while minimizing risks.
         </span>
@@ -33,12 +33,9 @@ export default function DisputeResolutionPage() {
         <span className="text-lg">
           In addition, the firm has strong expertise in litigation, arbitration, and alternative dispute resolution (ADR). Whether through court proceedings or arbitration forums, SYS Law Office approaches each case with strategic foresight aimed at achieving outcomes that are legally sound and practically effective. For both domestic and international investors, the firm also provides investment consultation, offering guidance on structuring, regulatory approvals, and compliance for sustainable ventures.
         </span>
-        <span className="text-lg">
-          Through these services, SYS Law Office ensures clarity and stability in navigating legal complexities, reinforcing its role as a dependable partner across a wide spectrum of legal needs.
-        </span>
       </div>
 
-      <div className="w-full flex items-center justify-center mt-9 bg-white py-16">
+      <div className="w-full flex items-center justify-center mt-9 bg-white py-5">
         <button className="rounded w-fit border-2 border-gray-500 p-2 cursor-pointer" onClick={(() => router.push("/practice/business-consultation"))}>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" viewBox="0 0 16 25" fill="none">
             <path d="M14.6875 23.1251L1.25 12.1876L14.6875 1.25006" stroke="#131D2D" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
