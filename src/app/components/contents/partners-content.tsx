@@ -128,13 +128,14 @@ export default function PartnersContent() {
         </div>
         <div
           ref={scrollRef}
-          className="flex gap-4 scroll-smooth overflow-hidden mb-8"
+          className="flex gap-4 scroll-smooth overflow-hidden mb-8 py-4 px-4"
         >
           {partners.map((partner, index) => (
             <div
+              onClick={() => setCurrentPartner(index)}
               key={partner.name}
-              className={`min-w-[350px] rounded-lg p-6 bg-[#1B263B] text-white transition-all duration-300 border-2 ${currentPartner === index
-                ? "border-[#FFA500]"
+              className={`min-w-[350px] cursor-pointer rounded-lg p-6 bg-[#1B263B] text-white transition-all duration-300 border-2 ${currentPartner === index
+                ? "border-[#FFA500] scale-105"
                 : "border-transparent"
                 }`}
             >
