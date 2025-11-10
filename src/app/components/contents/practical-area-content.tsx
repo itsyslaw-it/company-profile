@@ -3,6 +3,7 @@ import Gavel from "@/app/assets/logos/gavel.png"
 import CourtHouse from "@/app/assets/logos/court-house.png"
 import Scale from "@/app/assets/logos/scale.png"
 import { useRouter } from "next/navigation"
+import { motion } from "framer-motion"
 
 export default function PracticalAreaContent() {
   const router = useRouter()
@@ -28,12 +29,19 @@ export default function PracticalAreaContent() {
 
   ]
   return (
-    <section id="services" className="py-16 bg-gray-50">
+    <motion.section id="services" className="py-16 bg-gray-50" initial={{ x: 0, opacity: 0 }}
+      animate={{ opacity: 1 }}>
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">OUR PRACTICE AREAS</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {practicalContentArr.map((e, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow min-h-[608px] flex flex-col justify-between">
+            <motion.div
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 },
+              }}
+              onClick={(() => router.push(e.route!))}
+              key={index} className="cursor-pointer bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow min-h-[608px] flex flex-col justify-between">
               <div className="block">
                 <div className="flex justify-center mb-6 min-h-[200px]">
                   <Image src={e.image} alt={""} className="object-contain" />
@@ -44,10 +52,10 @@ export default function PracticalAreaContent() {
               <button onClick={(() => router.push(e.route!))} className="text-right cursor-pointer w-full text-[#C7A46C] hover:text-[#B08F58] font-semibold text-xl">
                 See detail →
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
