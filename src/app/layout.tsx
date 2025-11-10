@@ -5,7 +5,7 @@ import "./globals.css";
 const playfair = Playfair({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sartono Yudhio Sumarto Law Office',
+  title: 'Sartono Yudho Sumarto Law Office',
   description: 'Established to deliver precise legal counsel on litigation, advisory, and contractual matters across diverse fields of law.',
 }
 
