@@ -1,7 +1,18 @@
 import Image from "next/image"
 import HomePageCover from "@/app/assets/homepage-cover.png"
+import { useRouter } from "next/navigation"
+import { motion } from "framer-motion"
 
 export default function BannerContent() {
+  const router = useRouter();
+  const handleClickContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      router.push("/#contact");
+    }
+  }
   return (
     <section className="relative text-white min-h-[600px] flex items-center overflow-hidden bg-[#131D2D]">
       <div className="absolute h-full md:right-0 flex">
@@ -28,9 +39,14 @@ export default function BannerContent() {
             &quot;Established to deliver precise legal counsel on litigation, advisory, and
             contractual matters across diverse fields of law.&quot;
           </p>
-          <button className="bg-[#C7A46C] hover:bg-[#B08F58] text-white cursor-pointer px-8 py-3 text-xl rounded-lg transition-colors font-bold">
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2 },
+            }} onClick={(() => handleClickContact())}
+            className="bg-[#C7A46C] hover:bg-[#B08F58] text-white cursor-pointer px-8 py-3 text-xl rounded-lg transition-colors font-bold">
             CONTACT US
-          </button>
+          </motion.button>
         </div>
       </div>
     </section>
