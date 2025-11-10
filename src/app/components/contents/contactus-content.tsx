@@ -45,7 +45,7 @@ export default function ContactUsContent() {
             <hr className="my-4 w-full" />
             <div className="flex flex-col w-full">
               <span>Jalan Ciomas III No. 5, 12180 Indonesia</span>
-              <span>info@syslawoffice.co.id • +62 21 1234 5678</span>
+              <span>info@syslawnpartner.com • +62 21 1234 5678</span>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function ContactUsContent() {
                 placeholder="Name"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
+                className="text-[#131D2D] w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
               />
             </div>
             <div>
@@ -75,7 +75,7 @@ export default function ContactUsContent() {
                 placeholder="Email"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
+                className="text-[#131D2D] w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
               />
             </div>
             <div>
@@ -89,7 +89,7 @@ export default function ContactUsContent() {
                 placeholder="Subject"
                 value={form.subject}
                 onChange={handleChange}
-                className="w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
+                className="text-[#131D2D] w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-600"
               />
             </div>
             <div>
@@ -102,7 +102,7 @@ export default function ContactUsContent() {
                 placeholder="Write text here..."
                 value={form.message}
                 onChange={handleChange}
-                className="w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg h-32 resize-none focus:outline-none focus:border-amber-600"
+                className="text-[#131D2D] w-full placeholder-[#131D2D]/50 px-4 py-3 border border-gray-300 rounded-lg h-32 resize-none focus:outline-none focus:border-amber-600"
               />
             </div>
             <div>
