@@ -6,7 +6,8 @@ import AliZubri from '@/app/assets/ali-zubri.png'
 import LizaMashita from '@/app/assets/liza-mashita.png'
 
 export default function PartnersContent() {
-  const [currentPartner, setCurrentPartner] = useState(0)
+  const [currentPartner, setCurrentPartner] = useState(0);
+  const isFirstRender = useRef(true)
 
   const partners = [
     {
@@ -82,6 +83,11 @@ export default function PartnersContent() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      return
+    }
+
     if (!scrollRef.current) return;
 
     const activeCard = scrollRef.current.children[currentPartner] as HTMLElement;
@@ -99,7 +105,6 @@ export default function PartnersContent() {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">OUR PARTNER</h2>
 
-        {/* Main Partner Display */}
         <div className="bg-slate-800 rounded-lg p-8 mb-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {partners[currentPartner].image! && (
@@ -121,18 +126,16 @@ export default function PartnersContent() {
             </div>
           </div>
         </div>
-
-        {/* Partner Cards */}
-
         <div
           ref={scrollRef}
-          className="flex gap-4 scroll-smooth overflow-hidden mb-8"
+          className="flex gap-4 scroll-smooth overflow-hidden mb-8 py-4 px-4"
         >
           {partners.map((partner, index) => (
             <div
+              onClick={() => setCurrentPartner(index)}
               key={partner.name}
-              className={`min-w-[350px] rounded-lg p-6 bg-[#1B263B] text-white transition-all duration-300 border-2 ${currentPartner === index
-                ? "border-[#FFA500]" // border oranye
+              className={`min-w-[350px] cursor-pointer rounded-lg p-6 bg-[#1B263B] text-white transition-all duration-300 border-2 ${currentPartner === index
+                ? "border-[#FFA500] scale-105"
                 : "border-transparent"
                 }`}
             >
@@ -143,7 +146,6 @@ export default function PartnersContent() {
           ))}
         </div>
 
-        {/* Navigation */}
         <div className="flex justify-center space-x-4">
           <button
             onClick={prevPartner}
