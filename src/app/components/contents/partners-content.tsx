@@ -43,9 +43,9 @@ export default function PartnersContent() {
       title: "Partner",
       description:
         <>
-          Liza Mashita Ramadhania is the Managing Partner of Mashita Law Office with over a decade of experience as a corporate and dispute resolution lawyer. She earned her Bachelor of Law in Business Law from Universitas Gadjah Mada and her Master of Law in Business Law from Universitas Indonesia, two of the country's most prestigious institutions. A licensed advocate under PERADI, Liza has advised and represented clients across diverse industries, including mining, aviation, and corporate commercial matters, combining legal expertise with strong commercial insight.
+          Liza Mashita Ramadhania is the Managing Partner of Mashita Law Office with over a decade of experience as a corporate and dispute resolution lawyer. She earned her Bachelor of Law in Business Law from Universitas Gadjah Mada and her Master of Law in Business Law from Universitas Indonesia, two of the country&apos;s most prestigious institutions. A licensed advocate under PERADI, Liza has advised and represented clients across diverse industries, including mining, aviation, and corporate commercial matters, combining legal expertise with strong commercial insight.
           <br /><br />
-          Earlier in her career, she distinguished herself academically by representing UGM in international moot court competitions, where she achieved 3rd place in the Asia-Pacific Round of the Foreign Direct Investment International Arbitration Moot, and contributed to the Juris Gentium Law Review. In recognition of her impact and leadership in the legal field, she was named one of Hukumonline's NeXGen Lawyers 2022, highlighting her role as one of Indonesia's promising young legal professionals shaping the future of the industry.
+          Earlier in her career, she distinguished herself academically by representing UGM in international moot court competitions, where she achieved 3rd place in the Asia-Pacific Round of the Foreign Direct Investment International Arbitration Moot, and contributed to the Juris Gentium Law Review. In recognition of her impact and leadership in the legal field, she was named one of Hukumonline&apos;s NeXGen Lawyers 2022, highlighting her role as one of Indonesia&apos;s promising young legal professionals shaping the future of the industry.
         </>,
       expertise: "Specializes in corporate and commercial law, mining, aviation and dispute resolution. Recognized by Hukumonline as a NexGen Lawyer 2022, with a strong track record of delivering practical, client-focused solutions.",
       image: LizaMashita
@@ -55,7 +55,7 @@ export default function PartnersContent() {
       title: "Partner",
       description:
         <>
-          L. Wahyuni Yudhosumarto is a Senior Associate at SYS Law Office. She earned her law degree from the Faculty of Law, University of Indonesia, and holds a Master's degree in Human Resources Management from a graduate program in Jakarta. With a strong academic foundation in both law and management, she brings a multidisciplinary perspective to her practice. Her expertise spans labor and employment law, industrial relations, and family law. She has extensive experience in drafting and negotiating labor agreements, company regulations, and compensation frameworks, as well as representing clients in labor disputes and union negotiations. She also advises on family law matters including marriage, divorce, and inheritance.
+          L. Wahyuni Yudhosumarto is a Senior Associate at SYS Law Office. She earned her law degree from the Faculty of Law, University of Indonesia, and holds a Master&apos;s degree in Human Resources Management from a graduate program in Jakarta. With a strong academic foundation in both law and management, she brings a multidisciplinary perspective to her practice. Her expertise spans labor and employment law, industrial relations, and family law. She has extensive experience in drafting and negotiating labor agreements, company regulations, and compensation frameworks, as well as representing clients in labor disputes and union negotiations. She also advises on family law matters including marriage, divorce, and inheritance.
           <br /><br />
           In addition, she is experienced in government procurement, offering legal guidance on tender processes and contract negotiations. Her combination of legal knowledge and practical business insight enables her to support clients effectively in both private and public sectors. As Senior Associate, L. Wahyuni advises and represents clients with precision, professionalism, and a strong commitment to legal standards.
         </>,
@@ -272,8 +272,8 @@ export default function PartnersContent() {
                   setCurrentPartner(index);
                 }}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${currentPartner === index
-                    ? "bg-[#C7A46C] w-6"
-                    : "bg-slate-600 hover:bg-slate-500"
+                  ? "bg-[#C7A46C] w-6"
+                  : "bg-slate-600 hover:bg-slate-500"
                   }`}
                 whileHover={{ scale: 1.2 }}
               />
