@@ -21,7 +21,7 @@ export default function AboutUsContent() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.7, ease: "easeOut" }
+      transition: { duration: 0.7, ease: "easeOut" as const }
     }
   }
 
@@ -31,7 +31,7 @@ export default function AboutUsContent() {
       opacity: 1,
       x: 0,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" as const }
     }
   }
 

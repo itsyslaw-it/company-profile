@@ -53,7 +53,7 @@ export default function PracticalAreaContent() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94]
+        ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number]
       }
     }
   }
@@ -63,7 +63,7 @@ export default function PracticalAreaContent() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6, ease: "easeOut" as const }
     }
   }
 

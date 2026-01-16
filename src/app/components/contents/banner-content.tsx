@@ -33,7 +33,7 @@ export default function BannerContent() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6, ease: "easeOut" as const }
     }
   }
 
@@ -42,7 +42,7 @@ export default function BannerContent() {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut", delay: 0.8 }
+      transition: { duration: 0.5, ease: "easeOut" as const, delay: 0.8 }
     }
   }
 
