@@ -141,7 +141,7 @@ export default function ContactUsContent() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Phone</h4>
-                  <p className="text-gray-600 text-sm">+62 21 1234 5678</p>
+                  <p className="text-gray-600 text-sm">+62 21 7246 133</p>
                 </div>
               </div>
             </motion.div>
