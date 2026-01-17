@@ -27,7 +27,7 @@ export default function PartnersContent() {
       image: FerhatSartono
     },
     {
-      name: "Ali Zubri",
+      name: "Ali Zahri",
       title: "Partner",
       description:
         <>
