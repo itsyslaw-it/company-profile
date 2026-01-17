@@ -77,8 +77,8 @@ export default function NavbarContent({ className }: Props) {
   return (
     <motion.nav
       className={`text-white py-4 h-20 flex items-center ${className} sticky top-0 z-50 transition-all duration-300 ${isScrolled
-          ? 'bg-[#172336]/95 backdrop-blur-md shadow-lg'
-          : 'bg-[#172336]'
+        ? 'bg-[#172336]/95 backdrop-blur-md shadow-lg'
+        : 'bg-[#172336]'
         }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -87,7 +87,7 @@ export default function NavbarContent({ className }: Props) {
       <div className="px-6 flex justify-between items-center w-full">
         {/* Logo */}
         <motion.div
-          className="cursor-pointer"
+          className="cursor-pointer ml-14 flex items-center h-full"
           onClick={() => router.push("/")}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -97,7 +97,7 @@ export default function NavbarContent({ className }: Props) {
             alt="SYS Law Office Logo"
             width={200}
             height={20}
-            className="fixed top-0 left-20 transition-opacity duration-300"
+            className="transition-opacity duration-300 mt-16"
           />
         </motion.div>
 
